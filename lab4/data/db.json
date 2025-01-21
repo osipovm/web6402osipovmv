@@ -1,0 +1,19 @@
+{
+  "qualities": [
+    {
+      "id": 1,
+      "quality": "Creativity",
+      "description": "Allows you to complete tasks on time with high quality (it's almost always like this :) )"
+    },
+    {
+      "id": 2,
+      "quality": "Reliability",
+      "description": "Delivers tasks on time with high quality."
+    },
+    {
+      "id": 3,
+      "quality": "Teamwork",
+      "description": "Works well with others and encourages collaboration."
+    }
+  ]
+}
