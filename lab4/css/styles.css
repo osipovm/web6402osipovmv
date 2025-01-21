@@ -1,0 +1,197 @@
+/* Общие стили для всего сайта */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4e4e4; /* Светло-серый фон */
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #00bcd4; /* Цвет для hover эффекта */
+}
+
+/* Стили для страницы профиля (Flexbox) */
+.profile {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column; /* Выстраиваем элементы в колонку */
+    align-items: center; /* Центрируем элементы */
+    justify-content: center; /* Центрируем по вертикали */
+}
+
+.profile-photo img {
+    width: 150px; /* Размер фото */
+    height: 150px; /* Задаем одинаковую высоту для квадрата */
+    border-radius: 15px;
+    object-fit: cover; /* Обрезает изображение, если оно не идеально подходит по размеру */
+    margin-bottom: 20px; /* Отступ между фото и именем */
+}
+
+.profile-text h1 {
+    margin: 0; /* Убираем стандартный отступ */
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-text p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto; /* Центрируем текст */
+}
+
+/* Стили для таблицы */
+.profile table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.profile table, .profile th, .profile td {
+    border: 1px solid #ccc;
+}
+
+.profile th, .profile td {
+    padding: 8px;
+    text-align: left;
+}
+
+.profile th {
+    background-color: #f4f4f4;
+}
+
+/* Стили для страницы контактов */
+.contacts {
+    padding: 20px;
+    text-align: center;
+}
+
+.contacts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contacts ul li {
+    margin: 10px 0;
+}
+
+/* Стили для формы на странице контактов */
+form {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px; /* Ограничиваем ширину формы */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto; /* Центрируем форму по горизонтали */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00bcd4; /* Цвет кнопки при наведении */
+}
+
+/* Стили для страницы проектов (Flexbox для вертикального расположения) */
+.projects {
+    padding: 20px;
+    text-align: center;
+    display: flex; /* Используем Flexbox */
+    flex-direction: column; /* Располагаем элементы по колонке */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    gap: 20px; /* Отступы между карточками */
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+    width: 80%; /* Устанавливаем ширину для карточек */
+}
+
+.projects ul li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Плавное увеличение при наведении */
+}
+
+.projects ul li:hover {
+    transform: scale(1.05); /* Легкое увеличение карточки при наведении */
+}
+
+/* Фиксированный футер */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
