@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="projects.html">Проекты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contacts">
+            <h1>Контактная информация</h1>
+            <ul>
+                <li>Email: <a href="mailto:osipovm08@mail.ru">osipovm08@mail.ru</a></li>
+                <li>Телефон: +7 904 263 42 40</li>
+                <li>Почтовый адрес: Самара, Московское шоссе, 34б</li>
+            </ul>
+
+            <h2>Свяжитесь со мной</h2>
+            <p>Заполните форму ниже, чтобы отправить сообщение:</p>
+
+            <!-- Форма обратной связи -->
+            <form id="contactForm">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Максим Осипов</p>
+    </footer>
+
+    <!-- Подключение скрипта для обработки формы -->
+    <script src="js/contactForm.js"></script>
+</body>
+</html>

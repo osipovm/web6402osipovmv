@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="projects.html">Проекты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="profile">
+            <div class="profile-content">
+                <div class="profile-photo">
+                    <!-- Фото пользователя -->
+                    <img src="images/avatar.jpg" alt="Фото профиля">
+                </div>
+                <div class="profile-text">
+                    <h1>Максим Осипов</h1>
+                    <p>Добро пожаловать в мое портфолио! Я веб-разработчик, который любит создавать веб-приложения.</p>
+                </div>
+            </div>
+            <!-- Таблица с качествами -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Личные качества</th>
+                        <th>Описание</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Данные загружаются динамически из db.json -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Максим Осипов</p>
+    </footer>
+    
+    <!-- Подключение скрипта для загрузки данных -->
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>
