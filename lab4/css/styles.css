@@ -1,0 +1,211 @@
+/* === Общие стили для всего сайта === */
+/* Устанавливает шрифт, фон, цвет текста и убирает стандартные отступы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4e4e4;
+    color: #333;
+}
+
+/* === Шапка и навигация === */
+/* Оформление заголовка и навигационного меню */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* === Профиль пользователя === */
+/* Раздел профиля с фото и описанием */
+.profile {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-text h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-text p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* === Таблица качеств === */
+/* Оформление таблицы с качествами пользователя */
+.profile table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+
+.profile table, .profile th, .profile td {
+    border: 1px solid #ccc;
+}
+
+.profile th, .profile td {
+    padding: 8px;
+    text-align: left;
+}
+
+.profile th:first-child, .profile td:first-child {
+    width: 40%; /* Первый столбец займет 40% */
+}
+
+.profile th:last-child, .profile td:last-child {
+    width: 60%; /* Второй столбец займет 60% */
+}
+
+.profile th {
+    background-color: #f4f4f4;
+}
+
+/* === Контактная страница === */
+/* Раздел с контактной информацией */
+.contacts {
+    padding: 20px;
+    text-align: center;
+}
+
+.contacts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contacts ul li {
+    margin: 10px 0;
+}
+
+/* === Форма обратной связи === */
+/* Стили для формы отправки сообщений */
+form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00bcd4;
+}
+
+/* === Стили для списка проектов === */
+/* Оформление карточек проектов */
+.projects {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+}
+
+.projects ul li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.projects ul li:hover {
+    transform: scale(1.05);
+}
+
+/* === Футер === */
+/* Нижняя часть сайта с копирайтом */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
