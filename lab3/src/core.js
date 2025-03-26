@@ -25,8 +25,8 @@ function even() {
 /**
  * Функция, которая считает сумму чисел от 1 до заданного числа (с использованием цикла).
  * @param {*} n - конечное значение для суммы
- * @returns {number} - сумма чисел от 1 до n
- * @throws {Error} - если n не является положительным числом
+ * @returns {number} - сумма чисел от 0 до n
+ * @throws {Error} - если n не является не числом
  */
 function sumTo(n) {
     if (typeof n !== 'number' || isNaN(n) || !Number.isInteger(n) || n < 0) {

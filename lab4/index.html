@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-                <li><a href="projects.html">Проекты</a></li>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="index.html" class="header__nav-link">Главная</a></li>
+                <li class="header__nav-item"><a href="contacts.html" class="header__nav-link">Контакты</a></li>
+                <li class="header__nav-item"><a href="projects.html" class="header__nav-link">Проекты</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="profile">
-            <div class="profile-content">
-                <div class="profile-photo">
-                    <!-- Фото пользователя -->
+            <div class="profile__photos">
+                <div class="profile__photo profile__photo_main"> 
                     <img src="images/avatar.jpg" alt="Фото профиля">
                 </div>
-                <div class="profile-text">
-                    <h1>Максим Осипов</h1>
-                    <p>Добро пожаловать в мое портфолио! Я веб-разработчик, который любит создавать веб-приложения.</p>
+                <div class="profile__photo profile__photo_other">
+                    <picture>
+                        <source srcset="images/123.png" media="(min-width: 1200px)"> <img src="images/12.png"alt="Второе изображение">
+                    </picture>
                 </div>
             </div>
-            <!-- Таблица с качествами -->
-            <table>
+            <div class="profile__text">
+                <h1 class="profile__name">Максим Осипов</h1>
+                <div class="profile__animated-text">Добро пожаловать в мое портфолио!</div>
+                <p class="profile__description" title="А вообще я бэкенд разрабочик">Я веб-разработчик, который любит
+                    создавать веб-приложения.</p>
+            </div>
+            <table class="profile__qualities">
                 <thead>
                     <tr>
                         <th>Личные качества</th>
                         <th>Описание</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <!-- Данные загружаются динамически из db.json -->
-                </tbody>
+                <tbody> <!-- Данные загружаются динамически из db.json --> </tbody>
             </table>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Максим Осипов</p>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 Максим Осипов</p>
     </footer>
-    
-    <!-- Подключение скрипта для загрузки данных -->
-    <script src="js/scripts.js" defer></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>

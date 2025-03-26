@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-header {
+.header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
@@ -83,6 +83,10 @@ nav ul li a:hover {
 
 .profile th, .profile td {
     padding: 8px;
+    text-align: right;
+}
+
+.profile th:first-child, .profile td:first-child {
     text-align: left;
 }
 
